@@ -1,57 +1,43 @@
-p {
-    background-color: #deb887;
+/* The full body of the page */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: cadetblue;
 }
 
-a {
-    text-decoration: none;
+/* The Main title of the page */
+#MainTitle {
+    text-align: center;
+
+    letter-spacing: 10px;
+
+    text-decoration: underline black;
 }
 
-/* atribuir estilo ao selecionar id */
-#label-age {
-    color: red;
+#Links {
+    text-align: center;
 }
 
-/* atribuir estilo a uma classe: conjunto de elemntos */
-.green-bg {
-    background-color: green;
-}
-
-input[type="password"] {
-    background-color: orange;
-}
-
-section>h4:hover {
-    background-color: blueviolet;
-    width: 200px;
-}
-
-#shopping {
-    background-color: blanchedalmond;
-    width: 200px;
-    height: 120px;
-    padding-top: 10px;
-    margin: 10px auto 0px auto;
-}
-
-#housevsdoom {
-    width: 500px;
-    height: 200px;
-}
-
-/* media queries */
-@media print {
-    nav {
-        display: none
-    }
-
-    body {
-        background-color: aqua;
+#AboutMe {
+    h2 {
+        text-align: center;
     }
 }
 
-@media (max-width: 798px) {
-    #housevsdoom {
-        width: 350px;
-        height: 200px;
+#FavoriteHyper {
+    h2 {
+        text-align: center;
+    }
+}
+
+#TimeTable {
+    h2 {
+        text-align: center;
+    }
+}
+
+#Contact {
+    h2 {
+        text-align: center;
     }
 }
