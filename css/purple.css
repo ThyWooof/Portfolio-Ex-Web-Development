@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+
+    color: black;
+
+    font-family: monospace;
+
+    text-decoration-thickness: 100px;
+
+    text-size-adjust: 40px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 20px;
+
+    text-decoration: underline wavy plum;
+}

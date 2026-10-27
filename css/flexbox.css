@@ -1,0 +1,54 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    justify-content: center;
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+
+}
+
+#one {
+    background-color: #80ffdb;
+}
+
+#two {
+    background-color: #64dfdf;
+}
+
+#three {
+    background-color: #48bfe3;
+}
+
+#four {
+    background-color: #5390d9;
+}
+
+#five {
+    background-color: #6930c3;
+}
+
+
+/* media para desktop */
+@media (max-width: 798px) {
+    #container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

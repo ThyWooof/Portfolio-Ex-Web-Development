@@ -1,0 +1,57 @@
+p {
+    background-color: #deb887;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* atribuir estilo ao selecionar id */
+#label-age {
+    color: red;
+}
+
+/* atribuir estilo a uma classe: conjunto de elemntos */
+.green-bg {
+    background-color: green;
+}
+
+input[type="password"] {
+    background-color: orange;
+}
+
+section>h4:hover {
+    background-color: blueviolet;
+    width: 200px;
+}
+
+#shopping {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 120px;
+    padding-top: 10px;
+    margin: 10px auto 0px auto;
+}
+
+#housevsdoom {
+    width: 500px;
+    height: 200px;
+}
+
+/* media queries */
+@media print {
+    nav {
+        display: none
+    }
+
+    body {
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 798px) {
+    #housevsdoom {
+        width: 350px;
+        height: 200px;
+    }
+}
