@@ -1,43 +1,232 @@
-/* The full body of the page */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    background-color: cadetblue;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
 }
 
-/* The Main title of the page */
+/* ===== Main Title ===== */
+
 #MainTitle {
-    text-align: center;
-
-    letter-spacing: 10px;
-
-    text-decoration: underline black;
+  text-align: center;
+  color: #89b4fa;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
+
+/* ===== Navigation Links ===== */
 
 #Links {
-    text-align: center;
+  background-color: #313244;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
 
-#AboutMe {
-    h2 {
-        text-align: center;
-    }
+#Links h1 {
+  font-size: 22px;
+  color: #f5c2e7;
 }
 
-#FavoriteHyper {
-    h2 {
-        text-align: center;
-    }
+a {
+  color: #89b4fa;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-#TimeTable {
-    h2 {
-        text-align: center;
-    }
+a:hover {
+  color: #f5c2e7;
+  text-decoration: underline;
 }
 
-#Contact {
-    h2 {
-        text-align: center;
-    }
+#Links a {
+  margin: 0 5px;
+}
+
+/* ===== Horizontal Line ===== */
+
+hr {
+  border: none;
+  border-top: 2px solid #45475a;
+  margin: 30px 0;
+}
+
+/* ===== Sections ===== */
+
+section {
+  background-color: #313244;
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #89b4fa;
+  border-bottom: 2px solid #45475a;
+  padding-bottom: 10px;
+}
+
+section h3 {
+  color: #f5c2e7;
+}
+
+/* ===== About Me ===== */
+
+#AboutMe p {
+  text-align: justify;
+}
+
+#AboutMe ul,
+#AboutMe ol {
+  padding-left: 30px;
+}
+
+#AboutMe li {
+  margin-bottom: 5px;
+}
+
+#AboutMe img {
+  display: block;
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+  border: 3px solid #89b4fa;
+}
+
+/* ===== Favorite Hyperlinks ===== */
+
+#FavoriteHyper a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#FavoriteHyper p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* ===== Weekly Timetable ===== */
+
+.Table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #585b70;
+  padding: 12px;
+}
+
+th {
+  background-color: #45475a;
+  color: #f5c2e7;
+}
+
+td {
+  background-color: #313244;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #38384b;
+}
+
+tbody tr:hover td {
+  background-color: #45475a;
+}
+
+/* ===== Contact Form ===== */
+
+#Contact form {
+  margin-top: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input:not([type="color"]) {
+  padding: 10px;
+  border: 1px solid #585b70;
+  border-radius: 6px;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  max-width: 100%;
+}
+
+input[type="color"] {
+  width: 45px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+input:focus {
+  outline: 2px solid #89b4fa;
+}
+
+button {
+  background-color: #89b4fa;
+  color: #1e1e2e;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b4befe;
+}
+
+/* ===== Mobile-Friendly Styling ===== */
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #MainTitle {
+    font-size: 28px;
+  }
+
+  #Links a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  input:not([type="color"]) {
+    width: 100%;
+  }
 }
